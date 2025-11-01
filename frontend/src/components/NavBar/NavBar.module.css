@@ -1,0 +1,55 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 1rem 3rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e35d8d;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.navLinks li a {
+  text-decoration: none;
+  color: #333333;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLinks li a:hover {
+  color: #e35d8d;
+}
+
+.btnPedido {
+  background-color: #e35d8d;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.btnPedido:hover {
+  background-color: #ff6fa4;
+}
