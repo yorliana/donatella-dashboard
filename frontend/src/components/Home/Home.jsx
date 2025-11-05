@@ -4,25 +4,26 @@ import NavBar from "../navBar/navBar";
 import SeccionII from "../SeccionII/SeccionII";
 import Formulario from "../formulario/formulario";
 import SeccionIII from "../SeccionIII/SeccionIII";
+import SeccionIV from "../SeccionIV/SeccionIV.jsx"
+import SeccionV from "../SeccionV/SeccionV.jsx"
 import Footer from '../Footer/Footer.jsx'
+import SeccionVI from "../../components/SeccionVI/SeccionVI.jsx";
 
 function Home() {
   
   return (
     
     <div className="min-h-screen bg-sky-50 flex justify-center items-center">
-<div className=" shadow-lg rounded-2xl p-8 w-100 h-1000 flex flex-col justify-center items-center">
+<div className=" shadow-lg rounded-2xl p-8  flex flex-col justify-center items-center">
   <SeccionI/>
 
   <NavBar/>
 
   <SeccionII/>
     <SeccionIII/>
-   <Formulario/>   
-
-      
-
-    
+    <SeccionIV/>
+    <SeccionV/>
+  <SeccionVI/>
       <Footer/>
       </div>
     </div>

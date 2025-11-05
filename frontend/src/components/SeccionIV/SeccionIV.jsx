@@ -1,57 +1,43 @@
 import React from "react";
-import { v4 as uuidv4 } from "uuid";
-import img from   '../../assets/img/fondo.png'
-import img1 from '../../assets/img/estrella.png'
-import img2 from '../../assets/img/dona.png'
-import img3 from '../../assets/img/caja.png'
-import img4 from '../../assets/img/amor.png'
-
+import imgFondo from "../../assets/img/seccionV/FondoBlanco.png";
+import imgCajas from "../../assets/img/seccionIV/cajasAmor.png";
+import imgOnda from "../../assets/img/seccionV/onda.png"; // solo se usa al final
 
 export default function SeccionIV() {
- 
-
   return (
-    
-          
+    <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white">
+      {/* Fondo blanco texturizado */}
+      <img
+        src={imgFondo}
+        alt="fondo blanco"
+        className="absolute inset-0 w-full h-full object-cover opacity-100 z-0 pointer-events-none"
+      />
 
-  
-    <div className="relative flex items-center justify-center bg-oklch(64.5% 0.246 16.439) py-16 overflow-hidden w200x h-800">
-        <h1>  Regala una caja de Donatella y reparte sonrisas por cada bocado.
- Perfectas para compartir con esa persona especial. ¡Pide las tuyas ya!</h1>
+      {/* Texto principal */}
+      <div className="relative z-10 mt-24 text-center px-6 md:px-0">
+        <h2 className="text-[#5a3d2b] text-lg md:text-xl font-medium leading-relaxed  ">
+          Regala una caja de Donatella y reparte sonrisas por cada bocado.
+          <br />
+          Perfectas para compartir con esa persona especial.{" "}
+          <span className="font-bold text-[#5a3d2b]">¡Pide las tuyas ya!</span>
+        </h2>
+      </div>
+
+      {/* Imagen de las cajas */}
+      <div className="relative z-10 mt-10 flex justify-center">
         <img
-        src={img}
-        alt="chispitas"
-        className="absolute inset-0 w-full h-full object-cover opacity-80 pointer-events-none z-0 w-450 h-800"
-      />
-      {/* ⭐ Fondo de estrella */}
-      <img
-        src={img1}// cambia la ruta a la tuya
-        alt="estrella fondo"
-        className="absolute w-80 md:w-[300] opacity-90"
-      />
+          src={imgCajas}
+          alt="Cajas Amor y Amistad Donatella"
+          className="w-[600px] md:w-[720px] lg:w-[800px] object-contain"
+        />
+      </div>
 
-      {/* 🍩 Dona izquierda */}
+      {/* Onda inferior roja */}
       <img
-        src={img2} // cambia la ruta
-        alt="dona"
-        className="absolute left-[-5%] md:left-[-10%] top-1/2 transform -translate-y-1/2 w-[160] md:w-[240] z-10"
+        src={imgOnda}
+        alt="onda inferior"
+        className="absolute bottom-0 left-0 w-full h-auto object-cover z-0"
       />
-
-      {/* 🎁 Caja derecha */}
-      <img
-        src={img3} // cambia la ruta
-        alt="caja"
-        className="absolute right-[-8%] md:right-[-10%] top-1/2 transform -translate-y-1/2 w-[160] md:w-[240] z-12"
-      />
-
-      {/* 💗 Texto principal */}
-      <img
-        src={img4} // cambia la ruta
-        alt="Amor y Amistad"
-        className="relative w-[300] md:w-[500] z-20"
-      />
-
-     
-    </div>
+    </section>
   );
 }

@@ -40,6 +40,10 @@ export default function Formulario() {
     }
   };
   return (
+
+    //COLOR DE FORMULARIO #fc8da3
+    //y el color marron #513326
+
     <div >
       <section className="w-11/12 md:w-300px bg-white p-8 rounded-2xl shadow mb-12">
         <h6 className="text-2xl font-semibold text-[#E35D8D] mb-20">¡Quiero mi caja de Amor!</h6>
