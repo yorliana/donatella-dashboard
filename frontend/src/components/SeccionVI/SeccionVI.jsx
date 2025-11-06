@@ -1,13 +1,22 @@
 import React from "react";
-import img1 from "../../assets/img/seccionVI/fondoFooter.png"; // onda superior
+import img1 from "../../assets/img/seccionVI/fondo.png"; // onda superior
 import img2 from "../../assets/img/seccionVI/chispas.png"; // chispas izquierda
 import img3 from "../../assets/img/seccionVI/chispas1.png"; // chispas derecha
 import img4 from "../../assets/img/seccionVI/donutsLover.png"; // #DonutLovers
+import Formulario from "../../components/Formulario/Formulario.jsx"
 
 export default function SeccionVI() {
-  return (
-    <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-end bg[#f59fb4] to-[#FFFFFF] overflow-hidden">
+  return ( 
+  
+  <>
+  <div>
+      
       {/* Onda superior */}
+      
+      <Formulario/>
+      </div>
+    <section className="relative w-full min-h-[90vh] flex flex-col items-center justify-end bg[#f59fb4] to-[#FFFFFF] overflow-hidden">
+     
       <img
         src={img1}
        
@@ -36,6 +45,7 @@ export default function SeccionVI() {
         alt="#DonutLovers"
         className="relative z-30 w-[100px] md:w-[400px] lg:w-[400px] mb-10"
       />
-    </section>
+
+    </section></>
   );
 }

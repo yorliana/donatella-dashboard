@@ -14,7 +14,7 @@ function Home() {
   return (
     
     <div className="min-h-screen bg-sky-50 flex justify-center items-center">
-<div className=" shadow-lg rounded-2xl p-8  flex flex-col justify-center items-center">
+<div className=" shadow-lg rounded-2xl  flex flex-col justify-center items-center">
   <SeccionI/>
 
   <NavBar/>

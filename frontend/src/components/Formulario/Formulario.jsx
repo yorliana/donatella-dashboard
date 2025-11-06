@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import img from "../../assets/img/footer/estrella.png"
+import img1 from "../../assets/img/footer/sticker.png"
+
 
 
 export default function Formulario() {
@@ -44,46 +47,87 @@ export default function Formulario() {
     //COLOR DE FORMULARIO #fc8da3
     //y el color marron #513326
 
-    <div >
-      <section className="w-11/12 md:w-300px bg-white p-8 rounded-2xl shadow mb-12">
-        <h6 className="text-2xl font-semibold text-[#E35D8D] mb-20">¡Quiero mi caja de Amor!</h6>
-        <form onSubmit={handleSubmit} className="flex flex-col gap-4">
-          <input
-            type="text"
-            name="nombre"
-            placeholder="Nombre completo*"
-            value={form.nombre}
-            onChange={handleChange}
-            className="border p-3 rounded-lg"
-          />
-          <input
-            type="text"
-            name="telefono"
-            placeholder="Teléfono*"
-            value={form.telefono}
-            onChange={handleChange}
-            className="border p-3 rounded-lg"
-          />
-            <input
-            type="number"
-            name="precio"
-            placeholder="Precio*"
-            value={form.precio}
-            onChange={handleChange}
-            className="border p-3 rounded-lg"
-            required
-            />
+  <section className="relative flex justify-center items-center py-20">
+  {/* Imagen superior */}
+  <img
+    src={img}
+    alt=""
+    className="absolute top-0 left-[20%] w-[180px] md:w-[140px] lg:w-[200px] z-10"
+  />
 
+  {/* Contenedor rosado */}
+  <div className="w-[90%] md:w-[70%] lg:w-[60%] bg-[#fc8da3] text-center px-8 py-12 rounded-2xl shadow-lg relative z-0">
+    <h2 className="text-[48px] md:text-[64px] font-black text-[#513326] mb-4 leading-tight font-['Montserrat']">
+      ¡Quiero mi caja<br />de Amor!
+    </h2>
 
-          <button
-            type="submit"
-            className="bg-[#E35D8D] text-white py-3 rounded-full hover:bg-pink-500 transition"
-          >
-            Pedir
-          </button>
-        </form>
-        {mensaje && <p className="mt-4 text-center text-[#E35D8D]">{mensaje}</p>}
-      </section>
+    <p className="text-[#513326] text-sm md:text-base mb-10 font-['Montserrat']">
+      Porque el verdadero cariño se mide en detalles auténticos. Este año, regala algo delicioso.<br />
+      Regala Donatella
+    </p>
+
+    <form
+      onSubmit={handleSubmit}
+      className="flex flex-col md:flex-row justify-center items-center gap-4 md:gap-6"
+    >
+      <input
+        type="text"
+        name="nombre"
+        placeholder="Nombre completo*"
+        value={form.nombre}
+        onChange={handleChange}
+        required
+        className="w-full md:w-[280px] bg-white border border-gray-200 rounded-xl px-4 py-3 text-[#513326] placeholder-[#513326] text-[12px] focus:outline-none focus:ring-2 focus:ring-[#d45b7b]"
+      />
+
+      <input
+        type="text"
+        name="telefono"
+        placeholder="Teléfono*"
+        value={form.telefono}
+        onChange={handleChange}
+        required
+        className="w-full md:w-[280px] bg-white border border-gray-200 rounded-xl px-4 py-3 text-[#513326] placeholder-[#513326] text-[12px] focus:outline-none focus:ring-2 focus:ring-[#d45b7b]"
+      />
+
+      <button
+        type="submit"
+        className="bg-[#4b2d25] text-white px-8 py-3 rounded-xl hover:bg-[#643c31] transition-all font-semibold"
+      >
+        Pedir
+      </button>
+    </form>
+
+    {mensaje && (
+      <p className="mt-6 text-center text-[#4b2d25] font-semibold">
+        {mensaje}
+      </p>
+    )}
+
+    <div className="mt-6 flex items-center justify-center gap-2">
+      <input
+        type="checkbox"
+        id="acepto"
+        className="w-4 h-4 text-[#4b2d25] border-gray-300 rounded focus:ring-[#d45b7b]"
+      />
+      <div className="w-full flex justify-start display-flex  items-left">
+      <label htmlFor="acepto" className="text-[10px] ml-[30px] px-4px text-[#513326] font-['Montserrat'] leading-none text-left" >
+        Ley de Protección de Datos Personales <br /> o Ley 1581 de 2012.
+      </label>
+      </div>
     </div>
+  </div>
+
+  {/* Imagen inferior */}
+  <img
+    src={img1}
+    alt=""
+    className="absolute bottom-[-9px] right-[20%] w-[120px] md:w-[150px] lg:w-[180px] z-10"
+  />
+</section>
+
+
+
+
   );
 }

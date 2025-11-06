@@ -5,15 +5,17 @@ import Home from './components/Home/Home'
 import Pedidos from "./components/Pedidos/Pedidos.jsx";
 import SeccionI from './components/SeccionI/SeccionI.jsx'
 import NavBar from "./components/navBar/navBar.jsx";
+import Formulario from "./components/formulario/formulario.jsx";
 function App() {
   return (
     <Router>
       <Routes>
         <Route path="/dashboard" element={<Dashboard />} />
-         <Route path="/home" element={<Home />} />
+         <Route path="/" element={<Home />} />
           <Route path="/pedidos" element={<Pedidos/>} />
           <Route path="/seccioni" element={<SeccionI/>} />
           <Route path="/navBar" element={<NavBar/>} />
+           <Route path="/formulario" element={<Formulario/>} />
         {/* Más rutas aquí si quieres */}
       </Routes>
     </Router>
