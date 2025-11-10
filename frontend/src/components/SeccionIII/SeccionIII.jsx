@@ -21,7 +21,7 @@ export default function SeccionIII() {
           
 
   
-    <section className="relative w-screen min-h-screen ]  flex flex-col items-center text-center text-white overflow-hidden"
+    <section className="relative w-full min-h-[100vh]  flex flex-col items-center text-center text-white overflow-hidden"
     style={{ backgroundImage: `url(${img9})` }}
     >
      
@@ -62,8 +62,8 @@ export default function SeccionIII() {
         src={img3}// cambia la ruta a la tuya
        
       />
-      <img src={img4} alt="" />
-      <img src={img5} alt="" />
+      <img src={img4} alt="" className="-mt-5"  />
+      <img src={img5} alt="" className="-mt-30" />
 </div>
 
 

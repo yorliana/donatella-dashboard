@@ -52,11 +52,11 @@ export default function Formulario() {
   <img
     src={img}
     alt=""
-    className="absolute top-0 left-[20%] w-[180px] md:w-[140px] lg:w-[200px] z-10"
+    className="absolute top-[-27%] left-[-18%] w-[180px] md:w-[140px] lg:w-[200px] z-10"
   />
 
   {/* Contenedor rosado */}
-  <div className="w-[90%] md:w-[70%] lg:w-[60%] bg-[#fc8da3] text-center px-8 py-12 rounded-2xl shadow-lg relative z-0">
+<div >
     <h2 className="text-[48px] md:text-[64px] font-black text-[#513326] mb-4 leading-tight font-['Montserrat']">
       ¡Quiero mi caja<br />de Amor!
     </h2>
@@ -122,7 +122,7 @@ export default function Formulario() {
   <img
     src={img1}
     alt=""
-    className="absolute bottom-[-9px] right-[20%] w-[120px] md:w-[150px] lg:w-[180px] z-10"
+    className="absolute bottom-[-20px] top-[93%]  right-[-11%] w-[120px] md:w-[150px] lg:w-[200px] z-10"
   />
 </section>
 

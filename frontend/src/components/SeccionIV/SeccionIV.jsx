@@ -2,9 +2,13 @@ import React from "react";
 import imgFondo from "../../assets/img/seccionV/FondoBlanco.png";
 import imgCajas from "../../assets/img/seccionIV/cajasAmor.png";
 import imgOnda from "../../assets/img/seccionV/onda.png"; // solo se usa al final
+import Formulario from "../formulario/formulario";
 
 export default function SeccionIV() {
   return (
+    <>
+    {/* Formulario — fijo y encima de todo */}
+  
     <section className="relative w-full min-h-screen flex flex-col items-center justify-center overflow-hidden bg-white">
       {/* Fondo blanco texturizado */}
       <img
@@ -38,6 +42,10 @@ export default function SeccionIV() {
         alt="onda inferior"
         className="absolute bottom-0 left-0 w-full h-auto object-cover z-0"
       />
+      
+   
     </section>
+    
+    </>
   );
 }

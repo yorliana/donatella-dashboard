@@ -22,8 +22,10 @@ function Home() {
   <SeccionII/>
     <SeccionIII/>
     <SeccionIV/>
-    <SeccionV/>
+
+    
   <SeccionVI/>
+
       <Footer/>
       </div>
     </div>

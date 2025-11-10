@@ -6,6 +6,7 @@ import Pedidos from "./components/Pedidos/Pedidos.jsx";
 import SeccionI from './components/SeccionI/SeccionI.jsx'
 import NavBar from "./components/navBar/navBar.jsx";
 import Formulario from "./components/formulario/formulario.jsx";
+import SeccionIV from "./components/SeccionIV/SeccionIV.jsx";
 function App() {
   return (
     <Router>
@@ -16,6 +17,7 @@ function App() {
           <Route path="/seccioni" element={<SeccionI/>} />
           <Route path="/navBar" element={<NavBar/>} />
            <Route path="/formulario" element={<Formulario/>} />
+                <Route path="/seccionIV" element={<SeccionIV/>} />
         {/* Más rutas aquí si quieres */}
       </Routes>
     </Router>
