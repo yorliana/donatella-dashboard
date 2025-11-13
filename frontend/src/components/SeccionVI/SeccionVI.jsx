@@ -4,7 +4,7 @@ import img1 from "../../assets/img/seccionVI/fondo.png"; // onda superior
 import img2 from "../../assets/img/seccionVI/chispas.png"; // chispas izquierda
 import img3 from "../../assets/img/seccionVI/chispas1.png"; // chispas derecha
 import img4 from "../../assets/img/seccionVI/donutsLover.png"; // #DonutLovers
-import Formulario from "../formulario/formulario";
+import Formulario from "../Formulario/Formulario.jsx";
 import img from '../../assets/img/footer/estrella.png'
 import sticker from '../../assets/img/footer/sticker.png'
 import fondo from "../../assets/img/seccionV/FondoBlanco.png";
