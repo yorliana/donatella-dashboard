@@ -1,10 +1,11 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: './',          // importante para que el build funcione en subcarpetas
   build: {
-    outDir: '../dist',       // genera dist en la raíz
+    outDir: 'dist',
     chunkSizeWarningLimit: 1000
   }
-})
+});
