@@ -1,4 +1,5 @@
 import express from "express";
+
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -10,6 +11,7 @@ import pedidosRoutes from "./routes/pedidos.routes.js";
 import connectDB from "./config/db.js";
 
 dotenv.config();
+const express = require('express');
 const app = express();
 app.use(express.json());
 //Middleware para leer body
