@@ -5,7 +5,7 @@ import Home from './components/Home/Home'
 import Pedidos from "./components/Pedidos/Pedidos.jsx";
 import SeccionI from './components/SeccionI/SeccionI.jsx';
 import NavBar from "./components/NavBar/NavBar.jsx";
-import Formulario from "./components/formulario/formulario.jsx";
+import Formulario from "./components/Formulario/Formulario.jsx";
 import SeccionIV from "./components/SeccionIV/SeccionIV.jsx";
 function App() {
   return (

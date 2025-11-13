@@ -2,7 +2,7 @@ import { useState } from "react";
 import SeccionI from "../SeccionI/SeccionI";
 import NavBar from "../NavBar/NavBar.jsx";
 import SeccionII from "../SeccionII/SeccionII";
-import Formulario from "../formulario/formulario";
+
 import SeccionIII from "../SeccionIII/SeccionIII";
 import SeccionIV from "../SeccionIV/SeccionIV.jsx"
 import SeccionV from "../SeccionV/SeccionV.jsx"
