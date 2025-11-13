@@ -3,9 +3,9 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './',          // importante para que el build funcione en subcarpetas
+  base: './',              // assets cargan correctamente
   build: {
-    outDir: 'dist',
+    outDir: 'dist',         // Vercel verá frontend/dist
     chunkSizeWarningLimit: 1000
   }
 });
