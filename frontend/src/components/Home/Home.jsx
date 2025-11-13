@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SeccionI from "../SeccionI/SeccionI";
-import NavBar from "../navBar/navBar";
+import NavBar from "../NavBar/NavBar.jsx";
 import SeccionII from "../SeccionII/SeccionII";
 import Formulario from "../formulario/formulario";
 import SeccionIII from "../SeccionIII/SeccionIII";
