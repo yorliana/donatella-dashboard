@@ -2,7 +2,7 @@ import React from "react";
 import imgFondo from "../../assets/img/seccionV/FondoBlanco.png";
 import imgCajas from "../../assets/img/seccionIV/cajasAmor.png";
 import imgOnda from "../../assets/img/seccionV/onda.png"; // solo se usa al final
-import Formulario from "../formulario/formulario";
+
 
 export default function SeccionIV() {
   return (
