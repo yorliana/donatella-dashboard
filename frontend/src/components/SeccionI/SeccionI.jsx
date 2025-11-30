@@ -11,7 +11,7 @@ export default function SeccionI() {
     <div className="flex items-center justify-between px-6 py-3">
             
 
-<span className="block text-center text-[14px] text-red-500 font-medium font-montserrat">
+<span className="w-full fixed block text-center text-[14px] text-red-500 font-medium font-montserrat">
   OBTÉN 10% EN LA PRIMERA COMPRA
 </span>
 
