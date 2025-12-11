@@ -7,11 +7,8 @@ import donutRoutes from "./routes/donutRoutes.js";
 import ventaRoutes from "./routes/ventaRoutes.js";
 import pedidosRoutes from "./routes/pedidos.routes.js";
 
-import connectDB from "./config/db.js";
-
 dotenv.config();
 
-// Inicializar express
 const app = express();
 
 // Middlewares
@@ -20,31 +17,27 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(cors({
   origin: "*",
-  methods: ["GET", "POST", "PUT", "DELETE,PATCH", "OPTIONS"],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 }));
-app.options("",cors());
+
 // Rutas
 app.use("/api/donuts", donutRoutes);
 app.use("/api/ventas", ventaRoutes);
 app.use("/api/pedidos", pedidosRoutes);
 
 app.get("/api", (req, res) => {
-  res.send("API Donas funcionando correctamente 🍩");
+  res.send("API Donas funcionando correctamente 🍩  (Vercel)");
 });
 
-// Conexión a Mongo
-mongoose
-  .connect(process.env.MONGO_URI)
-  .then(() => {
-     console.log("🍩 Conectado a MongoDB");
-  })
-  .catch((err) => { console.error("❌ Error en la conexión:", err)
-  });
+// Conexión a Mongo SOLO UNA VEZ
+if (!mongoose.connection.readyState) {
+  mongoose.connect(process.env.MONGO_URI)
+    .then(() => console.log("🍩 Conectado a MongoDB (Vercel)"))
+    .catch(err => console.error("❌ Error Mongo:", err));
+}
 
-// Servidor
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () =>
-  console.log(`🚀 Servidor corriendo en puerto ${PORT}`)
-);
+// ❗ ESTO ES LO MÁS IMPORTANTE ❗
+// Exportamos express SIN app.listen()
+export default app;
