@@ -17,7 +17,7 @@ const app = express();
 // Middlewares
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+MONGO_URI="mongodb+srv://ingyorlianam24_db_user:RoE3d1qTNTtyycAe@cluster0.h7kug8g.mongodb.net/DonatellaDashboard=Cluster0";
 app.use(cors({
   origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE,PATCH", "OPTIONS"],
