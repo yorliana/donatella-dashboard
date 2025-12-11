@@ -24,7 +24,7 @@ app.use(cors({
   allowedHeaders: ["Content-Type", "Authorization"],
   credentials: true,
 }));
-
+app.options("",cors());
 // Rutas
 app.use("/api/donuts", donutRoutes);
 app.use("/api/ventas", ventaRoutes);
