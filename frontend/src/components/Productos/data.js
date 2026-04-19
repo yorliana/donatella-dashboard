@@ -1,9 +1,9 @@
 import dona1 from '../../assets/img/productos/dona1.jpg'
-import dona2 from '../../assets/img/productos/dona2.jpg'
-import dona3 from '../../assets/img/productos/dona3.jpg'
+import dona2 from '../../assets/img/productos/dona2.png'
+import dona3 from '../../assets/img/productos/dona3.png'
 import dona4 from '../../assets/img/productos/dona4.jpg'
-import dona5 from '../../assets/img/productos/dona5.jpg'
-import dona6 from '../../assets/img/productos/dona6.jpg'
+import dona5 from '../../assets/img/productos/dona5.png'
+import dona6 from '../../assets/img/productos/dona6.png'
 
 
 export const data = [

@@ -17,7 +17,7 @@ export default function SeccionV() {
       <img
         src={fondo}
         alt="fondo blanco"
-        className="absolute inset-0 w-full h-full object-cover opacity-100 z-0 pointer-events-none"
+        className="absolute inset-0 w-full h-full object-cover z-0 pointer-events-none"
       />
 
       {/* Texto principal */}

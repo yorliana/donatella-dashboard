@@ -9,7 +9,7 @@ export default function Footer() {
   return (
 
 
-    <footer className="w-full h-[200px] bg-cover bg-center bg-no-repeat border-t-2 border-white"
+    <footer className="w-full h-[200px] bg-cover bg-center bg-no-repeat border-t-2 border-white order-l-0 border-r-0 border-b-0"
     style={{
         backgroundImage: `url(${fondoFooter})`,
       }}
